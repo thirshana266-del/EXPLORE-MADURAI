@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taste of Madurai - Famous Food</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Arial', sans-serif;
+            background: #FFF8F0;
+            color: #333;
+            line-height: 1.6;
+        }
+        header {
+            background: linear-gradient(135deg, #C0392B, #F39C12);
+            color: white;
+            text-align: center;
+            padding: 60px 20px;
+        }
+        header h1 {
+            font-size: 45px;
+            margin-bottom: 10px;
+        }
+        header p {
+            font-size: 18px;
+            opacity: 0.9;
+        }
+        .container {
+            max-width: 1100px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        .intro {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        .intro h2 {
+            font-size: 32px;
+            color: #C0392B;
+            margin-bottom: 15px;
+        }
+        .intro p {
+            font-size: 18px;
+            color: #555;
+        }
+        .food-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+        }
+        .food-card {
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: 0.3s;
+            border-top: 5px solid #F39C12;
+        }
+        .food-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        .food-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+        .food-content {
+            padding: 20px;
+        }
+        .food-content h3 {
+            color: #C0392B;
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+        .tag {
+            background: #F39C12;
+            color: white;
+            padding: 5px 12px;
+            border-radius: 20px;
+            font-size: 12px;
+            display: inline-block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+        .where {
+            margin-top: 15px;
+            padding-top: 15px;
+            border-top: 1px dashed #ddd;
+            font-size: 14px;
+            color: #666;
+        }
+        .back-btn {
+            display: block;
+            width: 220px;
+            margin: 50px auto;
+            text-align: center;
+            background: #C0392B;
+            color: white;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+        .back-btn:hover {
+            background: #A93226;
+        }
+        footer {
+            background: #2C3E50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }nav {
+            background: #8B0000;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            background: #FFD700;
+            color: #8B0000;
+        }
+        @media(max-width:768px){
+            nav ul{flex-direction: column;}
+            nav ul li{margin: 5px 0;}
+            .hero h1{font-size: 2.5rem;}
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="MaduraiTourist.html">HOME</a></li>
+            <li><a href="SacredPlaces.html">SACRED PLACES</a></li>
+            <li><a href="Visiting_Places.html">OTHER PLACES</a></li>
+            <li><a href="ExploreFoods.html">FOODS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Taste of Madurai 🍽️</h1>
+        <p>Spicy, Sweet, and Unforgettable Flavors</p>
+    </header>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Madurai Food is an Emotion</h2>
+            <p>Beyond idli and dosa, Madurai offers bold, spicy, and deeply satisfying flavors. 
+            Every dish tells a story of tradition, culture, and the love for good food.</p>
+        </div>
+
+        <div class="food-grid">
+
+            <!-- 1. Jigarthanda -->
+            <div class="food-card">
+                <div class="card">
+                    <div class="image-slider" id="slider1">
+                        <img src="https://th.bing.com/th/id/OIP.iALyrSGmtuOyT_cbAPZZ6QHaEK?w=301&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Jigarthanda">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.xcqrB-RQ69RB9c7hO0f8jwAAAA?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Jigardhanda">
+                        <img src="https://i.pinimg.com/736x/4a/2d/c3/4a2dc360fb89a3c57167a98d2643fa3d.jpg" alt="Jigardhanda">
+                    </div>
+                    <div class="food-content">
+                        <span class="tag">BEVERAGE</span>
+                        <h3>1. Jigarthanda</h3>
+                        <p>The iconic drink of Madurai. Made with milk, badam pisin, sarsaparilla syrup, and topped with ice cream. 
+                        The perfect cooler for Madurai's hot climate. A must-try for every visitor.</p>
+                        <div class="where">
+                            <b>Where to Try:</b> Famous Jigarthanda, Original Jigarthanda - East Gate, Muniyandi Vilas
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Kari Dosa -->
+            <div class="food-card">
+                <div class="card">
+                    <div class="image-slider" id="slider2">
+                        <img src="https://images.slurrp.com/webstories/wp-content/uploads/2023/08/31133328/cropped-Slurrp-23.jpg" alt="Kari Dosa">
+                        <img src="https://tse3.mm.bing.net/th/id/OIP.XW1hgVOnfj2-lq0-NXffwgHaK1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Kari Dosa">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.Sjan59CLjtt1MgdxVYWFeAHaFC?r=0&w=1600&h=1087&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Kari Dosa">
+                    </div>
+                    <div class="food-content">
+                        <span class="tag">NON-VEGETARIAN</span>
+                        <h3>2. Kari Dosa</h3>
+                        <p>A unique Madurai specialty. A crispy dosa stuffed with spicy minced mutton or chicken keema. 
+                        Best enjoyed late at night with a side of salna.</p>
+                        <div class="where">
+                            <b>Where to Try:</b> Convent Road, Amma Mess, South Gate Kari Kadai
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Bun Parotta -->
+            <div class="food-card">
+                <div class="card">
+                    <div class="image-slider" id="slider3">
+                        <img src="https://i1.wp.com/www.sharmiskitchen.com/wp-content/uploads/2020/07/Bun-Parota.jpg?resize=610%2C915" alt="Bun Parotta">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.KlsNssBlLq_ht_rt_z62SgHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Bun Parotta">
+                        <img src="https://site.dgtechsoln.com/wp-content/uploads/2023/09/Bun-Parotta.jpeg" alt="Bun Parotta">
+                    </div>
+                
+                    <div class="food-content">
+                        <span class="tag">STREET FOOD</span>
+                        <h3>3. Bun Parotta</h3>
+                        <p>Soft, fluffy, and slightly sweet parottas served with spicy salna and kurma. 
+                        A popular late-night snack available at roadside stalls across the city.</p>
+                        <div class="where">
+                            <b>Where to Try:</b> Roadside stalls after 7 PM, Ayyar Mess
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Paruthi Paal -->
+            <div class="food-card">
+                <div class="card">
+                    <div class="image-slider" id="slider4">
+                        <img src="https://i.ytimg.com/vi/_3vCQG6wAt4/maxresdefault.jpg" alt="Paruthi Paal.">
+                        <img src="https://i.ytimg.com/vi/t6SFvRV-Xng/oardefault.jpg?sqp=-oaymwEkCJUDENAFSFqQAgHyq4qpAxMIARUAAAAAJQAAyEI9AICiQ3gB&rs=AOn4CLAlz3L2ogFDxzT1a9P7Dygg0sxcLw" alt="Paruthi Paal">
+                        <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2020/06/New-Picture-2-8.jpg" alt="Paruthi Paal">
+                    </div>
+                    <div class="food-content">
+                        <span class="tag">BEVERAGE</span>
+                        <h3>4. Paruthi Paal</h3>
+                        <p>Cottonseed milk. A traditional health drink believed to reduce body heat. 
+                        Slightly sweet with a distinct flavor and a hint of ghee. Unique to Madurai.</p>
+                        <div class="where">
+                            <b>Where to Try:</b> Goripalayam, Anna Bus Stand, East Gate
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="card">
+                    <div class="image-slider" id="slider5">
+                        <img src="\KeeraVadai.jpeg" alt="Madurai Keerai Vadai">
+                        <img src="https://tse2.mm.bing.net/th/id/OIP.zp_PwogyLkdpF7QVrN8rNwHaJQ?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Madurai Keerai Vadai">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP.hqwUwUARu-n2h97qyhuOSwHaE4?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Madurai Keera Vadai ">
+                    </div>
+                    <div class="food-content">
+                        <span class="tag">SNACK</span>
+                        <h3>5. Keera Vadai</h3>
+                        <p>A crispy lentil fritter mixed with fresh spinach and spices. A Madurai evening staple. 
+                        Served hot with coconut chutney and spicy chutney. Perfect tea-time snack.</p>
+                        <div class="where">
+                            <b>Where to Try:</b> Ayyar Mess - South Gate, Murugan Idli Shop - Goripalayam, Evening street stalls
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 6. Ayira Meen Kulambu -->
+            <div class="food-card">
+                <div class="card">
+                    <div class="image-slider" id="slider6">
+                        <img src="https://www.yummytummyaarthi.com/wp-content/uploads/2015/08/IMG_9607.jpg" alt="Fish Curry">
+                        <img src="https://i.pinimg.com/originals/bb/8a/1d/bb8a1d695ff5fc36e12aaee2d72d7c79.jpg" alt="Ayira Meen Kulambu">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.q4e4iyiU_r4S8JuLOMrgawHaEK?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Ayira Meen Kulambu">
+                    </div>
+                    <div class="food-content">
+                        <span class="tag">NON-VEGETARIAN</span>
+                        <h3>6. Ayira Meen Kulambu</h3>
+                        <p>Sardine fish curry cooked in a tangy and spicy tamarind gravy. 
+                            Served with hot steamed rice. A staple in Madurai homes.
+                        </p>
+                        <div class="where">
+                            <b>Where to Try:</b> Hotel Sabarees, Amma Mess, Local home-style restaurants
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="card">
+                    <div class="image-slider" id="slider7">
+                        <img src="https://tse1.mm.bing.net/th/id/OIP._Ad4BjfclfFN2mIrgH4bDwHaE7?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Biryani">
+                        <img src="https://wallpaperaccess.com/full/8734290.jpg" alt="Biryani">
+                        <img src="https://img.restaurantguru.com/r8ce-Riyaz-briyani-Best-biryani-shop-Special-5-Biryani-Variety-meat.jpg" alt="Biryani">
+                    </div>
+                    <div class="food-content">
+                        <span class="tag">NON-VEGETARIAN</span>
+                        <h3>5. Biryani</h3>
+                        <p>Made with Seeraga Samba rice and cooked in Madurai style with rich spices and goat meat. 
+                        Less oily, more peppery and flavorful. Served with brinjal curry, raita, and salna.</p>
+                        <div class="where">
+                            <b>Where to Try:</b> Amma Mess - South Gate, Kumar Mess - KK Nagar, Joney Biryani - Anna Nagar, Amsavalli Bhavan - Periyar.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="card">
+                    <div class="image-slider" id="slider8">
+                        <img src="https://5.imimg.com/data5/SELLER/Default/2022/1/VM/AW/DX/139975930/thirunelveli-halwa-500x500.jpg" alt="Wheat Halwa">
+                        <img src="https://static.toiimg.com/photo/49737544.cms?imgsize=73463" alt="Carrot Halwa">
+                        <img src="https://tse4.mm.bing.net/th/id/OIP.-ca9frPv1ICD2ZEj-xIoHwHaG1?r=0&rs=1&pid=ImgDetMain&o=7&rm=3" alt="Paal Halwa(Milk Halwa)">
+                    </div>
+                    <div class="food-content">
+                        <span class="tag">SWEET</span>
+                        <h3>6. Madurai Halwa</h3>
+                        <p>A rich wheat-based sweet made with pure ghee and sugar. Dark, glossy, and aromatic. 
+                        Less sticky than Tirunelveli halwa with a distinct ghee flavor. Perfect end to a Madurai meal.</p>
+                        <p>Beyond wheat halwa, Madurai is also known for milk-based sweets. 
+                        <b>Paal Halwa</b> is made with condensed milk and ghee, giving it a soft, creamy texture and milky sweetness. 
+                        <b>Carrot Halwa</b> is made with fresh grated carrots, milk, and dry fruits. Warm, rich, and perfect for winters. 
+                        Both are a must-try for anyone with a sweet tooth.</p>
+                        <div class="where">
+                            <b>Where to Try:</b> Prema Vilas - South Veli Street. One of the oldest sweet shops in Madurai, 
+                            famous for its fresh and authentic halwas. Also available at Murugan Sweets and KC Das.
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="food-card">
+                <div class="card">
+                    <div class="image-slider" id="slider9">
+                        <img src="https://th.bing.com/th/id/OIP.3GlrN2dlwa6H9dFYd96jZQHaHa?w=174&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3" alt="Madurai Malli">
+                        <img src="https://m.media-amazon.com/images/I/51J8BS14gTL.jpg" alt="Madurai Mallipoo">
+                        <img src="https://www.alphonsostories.com/AlphonSoStoriesImages/SubServiceImage/Madurai-Malli03.jpg" alt="Madurai Jasmine">
+                    </div>
+                    <div class="food-content">
+                        <span class="tag">Flower</span>
+                        <h3> Madurai Malli - Jasmine</h3>
+                        <p>Not food, but the soul of Madurai. Madurai Jasmine has a GI tag for its unique fragrance. 
+                        Used in temples, homes, and sold in huge markets every morning.</p>
+                        <div class="where">
+                            <b>Where to Buy:</b> Puthu Mandapam Flower Market - Visit early at 5 AM
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+        </div>    
+        <a href="MaduraiTourist.html" class="back-btn">← Back to Home</a>
+    </div>
+
+    <footer>
+        <p>Explore Madurai Food © 2026 | Come Hungry, Leave Happy</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,589 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sacred Places & Festivals of Madurai</title>
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body {
+            font-family: 'Georgia', serif;
+            background: #FFFDF7;
+            color: #333;
+            line-height: 1.8;
+        }
+        nav {
+            background: #8B0000;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            padding: 0;
+            flex-wrap: wrap;
+        }
+        nav ul li {
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 25px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            background: #FFD700;
+            color: #8B0000;
+        }
+        header {
+            background: linear-gradient(135deg, #8B0000, #DAA520);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        header h1 { font-size: 48px; margin-bottom: 10px; }
+        header p { font-size: 20px; opacity: 0.9; }
+
+        .container { max-width: 1050px; margin: 50px auto; padding: 0 20px; }
+        .intro { text-align: center; margin-bottom: 60px; }
+        .intro h2 { font-size: 34px; color: #8B0000; margin-bottom: 15px; }
+
+        .places-grid {
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 85px;
+        }
+
+        .temple-card {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 6px 25px rgba(0,0,0,0.1);
+            margin-bottom: 60px;
+            overflow: hidden;
+            border-top: 6px solid #DAA520;
+            transition: 0.3s;
+        }
+        .temple-card:hover { transform: translateY(-6px); }
+        .temple-card img { width: 100%; height: 380px; object-fit: cover; }
+        .temple-content { padding: 35px; }
+        .temple-content h3 { font-size: 28px; color: #8B0000; margin-bottom: 15px; }
+        .temple-content p { font-size: 17px; color: #444; margin-bottom: 20px; text-align: justify; }
+        
+        .festival-box {
+            background: #FFFBEB;
+            border: 2px dashed #DAA520;
+            padding: 18px 22px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .festival-box h4 { color: #8B0000; margin-bottom: 8px; font-size: 18px; }
+
+        .address {
+            background: #FFF8E1;
+            border-left: 5px solid #DAA520;
+            padding: 18px 22px;
+            border-radius: 8px;
+            font-size: 15px;
+        }
+        .address b { color: #8B0000; }
+        .back-btn {
+            display: block; width: 240px; margin: 50px auto; text-align: center;
+            background: #8B0000; color: white; padding: 14px; border-radius: 30px;
+            text-decoration: none; font-weight: bold; transition: 0.3s;
+        }
+        .back-btn:hover { background: #6A0000; }
+        .section-title {
+            text-align: center;
+            font-size: 2rem;
+            margin: 40px 0 20px 0;
+            color: #8B0000;
+            border-bottom: 3px solid #FFD700;
+            padding-bottom: 10px;
+        }
+        footer { background: #2C3E50; color: white; text-align: center; padding: 25px; margin-top: 40px; }
+        
+        .card {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            overflow: hidden;
+            transition: 0.3s;
+        }
+        
+        @media(max-width:768px){
+            nav ul{flex-direction: column;}
+            nav ul li{margin: 5px 0;}
+            .hero h1{font-size: 2.5rem;}
+        }
+    </style>
+</head>
+<body>
+
+    <nav>
+        <ul>
+            <li><a href="MaduraiTourist.html">HOME</a></li>
+            <li><a href="SacredPlaces.html">SACRED PLACES</a></li>
+            <li><a href="Visiting_Places.html">OTHER PLACES</a></li>
+            <li><a href="ExploreFoods.html">FOODS</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Sacred Places of Madurai 🛕</h1>
+        <p>Where Every Month is a Celebration</p>
+    </header>
+
+    <!-- ========== TEMPLES SECTION ========== -->
+    <h2 class="section-title">⛪ Famous Temples in Madurai</h2>
+
+    <div class="container">
+        <div class="intro">
+            <h2>Spiritual + Festival Calendar</h2>
+            <p>Madurai temples are famous not just for architecture, but for grand festivals that happen throughout the year.</p>
+        </div>
+
+        <!-- 1. MEENAKSHI TEMPLE -->
+        <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider1">
+                    <img src="https://static.toiimg.com/photo/msid-59381739,width-96,height-65.cms" class="active" alt="Meenakshi Gopuram">
+                    <img src="https://i.ytimg.com/vi/_RdIea-Eo8I/maxresdefault.jpg" class="active" alt="Meenakshi Temple Tank">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh98An_jDnzCh5sEa5PuMjbfSs_ydYz2GW8YFIkqJf476RHpENnHg4alWpNjLScD1JBAdBszQWgka4V6lMGYr8if20YBHWWyKby-ShCEm19DW09qCE-Lo3GD5I7juNR0rbC_QRTC13fNvg/s1600/800px-MaduraiGoldenLotusTank3.JPG" class="active" alt="Golden Lotus Tank">
+                </div>
+                <div class="temple-content">
+                    <h3>1. Meenakshi Amman Temple</h3>
+                    <p>
+                        The Meenakshi Amman Temple is the soul of Madurai and one of the most famous temples in India. 
+                        Dedicated to Goddess Meenakshi, an avatar of Parvati, and Lord Sundareswarar, an avatar of Shiva, 
+                        this 2000-year-old temple is known for its 14 towering gopurams covered with over 33,000 colorful sculptures. 
+                        The main highlights include the Hall of 1000 Pillars, the Golden Lotus Tank, and the evening "Palliarai" ceremony 
+                        where Lord Shiva is taken to Goddess Meenakshi's chamber. The temple is not just a place of worship but a living 
+                        center of art, culture, and tradition that attracts millions of devotees every year.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Festivals & Time:</h4>
+                        <b>Meenakshi Thirukalyanam - Chithirai Festival:</b> April - 10 days. The biggest festival. Celestial wedding of Meenakshi & Sundareswarar. <br>
+                        <b>Float Festival - Thai Theppam:</b> January <br>
+                        <b>Navaratri:</b> September - October, 9 days <br>
+                        <b>Best Time to Visit:</b> April for Chithirai Festival
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Meenakshi Amman Temple, West Veli Street, Madurai, Tamil Nadu 625001 <br>
+                        <b>Timings:</b> 5:00 AM - 12:30 PM, 4:00 PM - 9:30 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 2. THIRUPARANKUNDRAM -->
+         <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider2">
+                    <img src="https://media.assettype.com/outlooktraveller/2023-08/bc42e675-393d-4f26-9e21-8c0caae03536/shutterstock_2294010155.jpg?w=1024&auto=format%2Ccompress&fit=max" class="active" alt="Thiruparankundram Temple">
+                    <img src="https://th.bing.com/th/id/R.26312e895c1b03638cc2e454b1295a3d?rik=6CuF8VT41xN6hw&riu=http%3a%2f%2fwww.templecity.in%2fImages%2fImg%2ftirupparankundram.jpg&ehk=%2fkYqKVyeRMhAl2FmHg28k%2fgSdRTiuth13V0QxEG4sZE%3d&risl=&pid=ImgRaw&r=0" class="active" alt="Thiruparankundram Temple">
+                    <img src="https://thumbs.dreamstime.com/b/thiruparankundram-murugan-temple-subramanya-swamy-rock-cut-temple-near-madurai-tamil-nadu-aug-thiruparankundram-murugan-temple-155661926.jpg" class="active" alt="Thiruparankundram Temple">
+                </div>
+                <div class="temple-content">
+                    <h3>2. Thiruparankundram Murugan Temple</h3>
+                    <p>
+                        Thiruparankundram is one of the six sacred abodes of Lord Murugan. It is believed that Lord Murugan married 
+                        Deivanai here. This 6th-century rock-cut temple is built inside a hill and is unique because it houses shrines 
+                        for Murugan, Shiva, Vishnu, Vinayagar, and Durga. The temple architecture, natural caves, and the view of Madurai 
+                        city from the top make it a significant pilgrimage and tourist spot. It is also famous for its healing water spring.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Festivals & Time:</h4>
+                        <b>Thaipusam:</b> January - February. Kavadi and grand procession. <br>
+                        <b>Panguni Uthiram:</b> March - April. Marriage festival of Murugan. <br>
+                        <b>Karthigai Deepam:</b> November - December. Lamps on the hill. <br>
+                        <b>Best Time to Visit:</b> January for Thaipusam
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Thiruparankundram Murugan Temple, Thiruparankundram, Madurai, Tamil Nadu 625005 <br>
+                        <b>Timings:</b> 5:30 AM - 12:30 PM, 4:00 PM - 8:30 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 3. ALAGAR KOVIL -->
+        <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider3">
+                    <img src="https://www.revv.co.in/blogs/wp-content/uploads/2021/01/Alagar-Koil-1280x720.jpg" class="active" alt="Alagar kovil">
+                    <img src="https://thumbs.dreamstime.com/b/gate-kallalagar-vishnu-temple-madurai-india-october-monumental-entrance-to-domain-shows-several-his-avatars-people-photo-76623626.jpg" class="active" alt="Alagar Kovil">
+                    <img src="https://maduraitourism.co.in/images/tourist-places/azhagar-kovil-alagar-koyil-temple-madurai/azhagar-kovil-alagar-koyil-temple-madurai-tourism-opening-time-closing.jpg" class="active" alt="Alagar Kovil">
+                </div>
+                <div class="temple-content">
+                    <h3>3. Alagar Kovil - Kallalagar Temple</h3>
+                    <p>
+                        Located 21km from Madurai at the foothills of Alagar Hills, this temple is dedicated to Lord Vishnu as Kallalagar. 
+                        It is famous for the grand Chithirai Festival in April, where Lord Kallalagar travels to Madurai to attend the 
+                        celestial wedding of Meenakshi and Sundareswarar. The temple has beautiful Dravidian architecture, a golden vimana, 
+                        and the sacred "Noopura Gangai" waterfall inside the temple complex. The peaceful surroundings and lush greenery 
+                        add to its spiritual charm.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Festivals & Time:</h4>
+                        <b>Chithirai Festival - Kallalagar Entry:</b> April. Kallalagar enters Vaigai River. Huge crowd. <br>
+                        <b>Garuda Sevai:</b> December <br>
+                        <b>Best Time to Visit:</b> April 12-15 for Kallalagar Vaigai Aruil Ezhuntharulum
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Alagar Kovil, Alagarkoil, Madurai, Tamil Nadu 625301 <br>
+                        <b>Timings:</b> 6:00 AM - 1:00 PM, 3:00 PM - 8:00 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 4. VANDIYUR MARIAMMAN -->
+        <div class="temple-card">
+            <div class="image-slider1" id="templeSlider4">
+                <img src="https://www.stumbit.com/assets/post/Vandiyur-Mariamman-Temple-Madurai-Stumbit-Temples-Heritage-Explore-768x653.jpg" class="active" alt="Theppakulam">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/16/79/5e/31/literally-teppakulam.jpg" class="active" alt="Vandiyur Mariamman Temple">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/01/b3/99/81/caption.jpg" class="active" alt="Vandiyur Mariamman Temple">
+            </div>
+            <div class="temple-content">
+                <h3>4. Vandiyur Mariamman Temple & Teppakulam</h3>
+                <p>
+                    The Vandiyur Mariamman Temple is dedicated to Goddess Mariamman, worshipped for protection from diseases. 
+                    Right in front of the temple is the massive Vandiyur Mariamman Teppakulam, one of the largest temple tanks in Asia. 
+                    Every year in January, the famous float festival is celebrated here with beautifully decorated deities on boats. 
+                    The huge tank and the temple together create a breathtaking sight, especially during evenings.
+                </p>
+                <div class="festival-box">
+                    <h4>🎉 Major Festivals & Time:</h4>
+                    <b>Teppam Festival - Float Festival:</b> January. 5 days. Deities taken on decorated floats. <br>
+                    <b>Aadi Festival:</b> July - August. Special poojas for Mariamman. <br>
+                    <b>Best Time to Visit:</b> January for the night float festival
+                </div>
+                <div class="address">
+                    <b>Address:</b> Vandiyur Mariamman Temple, Vandiyur, Madurai, Tamil Nadu 625012 <br>
+                    <b>Timings:</b> 6:00 AM - 12:00 PM, 4:00 PM - 8:00 PM
+                </div>
+            </div>
+        </div>
+        
+        <!-- 5. KOODAL ALAGAR PERUMAL TEMPLE -->
+        <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider5">
+                    <img src="https://3.bp.blogspot.com/-n9h81X0jUU0/Wq_k1zOg0RI/AAAAAAABDsY/yIG3oIGlJD4z986A1LZtHqQv5iwq6t_zQCLcBGAs/s1600/15166840644_85c23a6014_h.jpg" class="active" alt="Koodal Azhagar Temple">
+                    <img src="https://www.nativeplanet.com/photos/929x523x90/2018/10/photo-91-170256-1.jpg" class="active" alt="Koodal Azhagar Temple">
+                    <img src="https://maduraitourism.co.in/images/v2/places-to-visit/koodal-azhagar-temple-madurai-tourism-header.jpg" class="active" alt="Koodal Azhagar Temple">
+                </div>
+                <div class="temple-content">
+                    <h3>5. Koodal Azhagar Perumal Temple</h3>
+                    <p>
+                        Koodal Azhagar Temple is one of the 108 Divya Desams dedicated to Lord Vishnu, located in the heart of Madurai city. 
+                        The unique feature of this temple is that Lord Vishnu blesses devotees in three different postures: 
+                        Standing on ground floor, Sitting on first floor, and Reclining on second floor. 
+                        This 1000-year-old temple is believed to fulfill wishes related to wealth and clearing debts. 
+                        The tall Rajagopuram and intricate pillars showcase classic Dravidian architecture. 
+                        It is just 1.5km from Meenakshi Temple, so you can easily visit both together.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Festivals & Time:</h4>
+                        <b>Vaikunta Ekadasi:</b> December - January. Vaikunta Dwaram opens. <br>
+                        <b>Garuda Sevai:</b> December. Lord Azhagar on Garuda Vahanam procession. <br>
+                        <b>Chithirai Brahmotsavam:</b> April. 10 day grand celebration. <br>
+                        <b>Best Time to Visit:</b> December - January
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Koodal Azhagar Perumal Temple, South Masi Street, Madurai, Tamil Nadu 625001 <br>
+                        <b>Timings:</b> 6:00 AM - 12:00 PM, 4:30 PM - 8:30 PM <br>
+                        <b>Distance from Meenakshi Temple:</b> 1.5 KM
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- PAZHAMUDIRCHOLAI MURUGAN TEMPLE -->
+         <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider6">
+                    <img src="https://i.ytimg.com/vi/lvybeQZaACQ/maxresdefault.jpg" class="active" alt="Pazhamudircholai Temple">
+                    <img src="https://www.templepurohit.com/wp-content/uploads/2016/06/PAZHAMUDIRCHOLAI-MURUGAN-TEMPLE.jpg" class="active" alt="Pazhamudircholai Temple">
+                    <img src="https://maduraitourism.co.in/images/tourist-places/azhagar-kovil-alagar-koyil-temple-madurai/azhagar-kovil-alagar-koyil-temple-madurai-tourism-entry-fee.jpg" class="active" alt="Pazhamudircholai Temple">
+                </div>
+                <div class="temple-content">
+                    <h3>6. Pazhamudircholai Murugan Temple</h3>
+                    <p>
+                        Pazhamudircholai is the sixth and final abode of Lord Murugan among the Arupadai Veedu. 
+                        Located 20km from Madurai inside the Alagar Hills forest, this temple is famous for its serene atmosphere and natural beauty. 
+                        The name means "forest with falling fruits". It is the place where Lord Murugan tested Saint Avvaiyar with the famous 
+                        "Sudaatha Pazham" story. The temple is surrounded by lush greenery, small waterfalls, and monkeys. 
+                        Devotees believe praying here brings wisdom, clears education obstacles, and gives peace of mind. 
+                        The journey through the forest itself is a spiritual experience.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Festivals & Time:</h4>
+                        <b>Thaipusam:</b> January - February. Kavadi procession from Alagar Kovil. <br>
+                        <b>Panguni Uthiram:</b> March - April. Special abhishekam and poojas. <br>
+                        <b>Karthigai Deepam:</b> November - December. Entire hill is lit with lamps. <br>
+                        <b>Best Time to Visit:</b> Morning hours. Avoid afternoon due to forest heat
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Pazhamudircholai Murugan Temple, Pazhamudircholai Hills, Alagarkoil, Madurai, Tamil Nadu 625301 <br>
+                        <b>Timings:</b> 6:00 AM - 12:00 PM, 4:00 PM - 8:00 PM <br>
+                        <b>Distance from Madurai:</b> 20 KM. Bus: Route 44 from Periyar Bus Stand
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- PANDI KOVIL - THIRUPARANKUNDRAM -->
+         <div>
+            <div class="temple-card">                    
+                <div class="image-slider1" id="templeSlider7">
+                    <img src="https://gumlet.assettype.com/vikatan%2F2021-02%2F6fa1c20c-5214-40fd-b1cf-43eac5f07bc1%2FWhatsApp_Image_2021_02_18_at_17_18_35__1_.jpeg?auto=format%2Ccompress&w=1200" class="active" alt="Pandi Kovil"" alt="">
+                    <img src="https://live.staticflickr.com/7529/15733325666_32c6149009_b.jpg" class="active" alt="Pandi Kovil">
+                    <img src="https://www.mymadurai.in/assets/img/event/event-35.jpg" class="active" alt="Pandi Kovil">
+                </div>
+                <div class="temple-content">
+                    <h3>7. Sri Pandi Kovil</h3>
+                    <p>
+                        Pandi Kovil is a historic Murugan temple located at the foothills of Thiruparankundram. 
+                        Built and patronized by Pandya kings, hence called "Pandi Kovil". It is believed that Pandya kings 
+                        prayed here before going to war. The temple is known for its powerful vibrations and quick blessings. 
+                        This is one of the important temples in Madurai for devotees seeking victory in legal matters and protection. 
+                        The architecture reflects Pandya style with strong stone structures.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Festivals & Time:</h4>
+                        <b>Thaipusam:</b> January - February. Grand Kavadi and procession. <br>
+                        <b>Panguni Uthiram:</b> March - April. Marriage festival of Murugan. <br>
+                        <b>Best Time to Visit:</b> Tuesday and Friday mornings
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Pandi Kovil, Thiruparankundram Hill Base, Madurai, Tamil Nadu 625005 <br>
+                        <b>Timings:</b> 5:30 AM - 12:30 PM, 4:00 PM - 8:30 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- IMMMAIYILUM NAMMAI THARUVAR TEMPLE - PERIYAR -->
+        <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider8">
+                    <img src="https://tntemplesproject.in/wp-content/uploads/2021/02/2021-2-21-7-gv27-1-7-immayil-nanmai-tharuvar-madurai-madurai-11.jpg?strip=info&w=1024" class="active" alt="Immaiyilum Nammai Kakkum Annai Temple Periyar">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhc5Kon2kYzvR9ALtCNIDInnCPb6Y4_HOwmp7LFdxX53ScS4HuUD2P__XVOnHYFPQIPUI9-BVkYQrzmRUIQCq8O0MzY8UEuHL4-AMkxNm5n3aH58oYNHXW1Z8cUm7mcKiiw3GuPOjikKkTj/s1600/2017-10-25.jpg" class="active" alt="Immaiyilum Nammai Kakkum Annai Temple Periyar">
+                    <img src="https://th.bing.com/th/id/R.59fba12b60ec98adf4c0944babbee4a3?rik=w2fMEUrK6%2fTHlw&riu=http%3a%2f%2ffindmytemple.com%2fimages%2fArticle_Images%2fT141_Inmayilum-nanmai-taruvaar_temple5.jpg&ehk=52uRwtm%2f7Env3gTGJfW1gPaDOJNT2rK7RC8LpuxAYAE%3d&risl=&pid=ImgRaw&r=0" class="active" alt="Immaiyilum Nammai Kakkum Annai Temple Periyar">
+                </div>
+                <div class="temple-content">
+                    <h3>8. Sri Immaiyilum Nanmai Tharuvar Temple</h3>
+                    <p>
+                        Located near Periyar Bus Stand in the heart of Madurai city, this is a very powerful and ancient Shiva temple. 
+                        "Immaiyilum Nammai Kakkum Annai" means "The Mother who protects us in this life and the next". 
+                        Devotees believe that worshipping here will bring protection in both this birth and the next birth. 
+                        The main deities are **Lord Kasi Viswanathar** and Goddess **Visalakshi Amman**. 
+                        It is believed that praying here gives the same blessings as visiting Kasi Viswanathar Temple in Varanasi. 
+                        Hence it is also called "Madurai Kasi". 
+                        People facing court cases, debts, and health problems come here to pray and believe their problems will be resolved. 
+                        The temple is small but very peaceful. It is just a 2-minute walk from Periyar Bus Stand.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Festivals & Timings:</h4>
+                        <b>Pradosham:</b> Twice every month. Evening 4:30 PM - 6:00 PM. Very famous here. <br>
+                        <b>Maha Shivaratri:</b> February - March. All-night pooja. <br>
+                        <b>Karthigai Deepam:</b> November - December. <br>
+                        <b>Aadi Amavasai:</b> July - August. Rituals for ancestors. <br>
+                        <b>Best Time to Visit:</b> Pradosham days and Monday mornings
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Sri Kasi Viswanathar Temple, East Gate, Near Periyar Bus Stand, Madurai, Tamil Nadu 625001 <br>
+                        <b>Timings:</b> 6:00 AM - 12:00 PM, 5:00 PM - 8:30 PM <br>
+                        <b>Landmark:</b> 200 meters from Periyar Bus Stand East Gate
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- SAMANAR MALAI KASI VISWANATHAR TEMPLE -->
+        <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider9">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/54/bc/07/kasi-viswanathar-temple.jpg?w=1200&h=1200&s=1" class="active" alt="Samanar Malai Kasi Viswanathar Temple">
+                    <img src="https://maduraitourism.co.in/images/places-to-visit/headers/samanar-hills-malai-near-madurai-entry-fee-timings-holidays-reviews-header.jpg" class="active" alt="Samanar Malai Kasi Viswanathar Temple">
+                    <img src="https://lakshmisharath.com/wp-content/uploads/2021/01/Madurai-Samanar-Hills-Ayyanar-Temple-lake-2-1024x768.jpg" class="active" alt="Samanar Malai Kasi Viswanathar Temple">
+                </div>
+                <div class="temple-content">
+                    <h3>9. Sri Kasi Viswanathar Temple - Samanar Malai</h3>
+                    <p>
+                        Sri Kasi Viswanathar Temple is located on the hilltop of Samanar Malai, near Keelakuyilkudi, about 12 KM from Madurai. 
+                        This is a 300+ year old Shiva temple. The main deities are <b>Lord Kasi Viswanathar</b> and Goddess <b>Visalakshi Amman</b>. 
+                        Devotees believe that worshipping here gives the same blessings as visiting Varanasi Kasi. 
+                        Hence it is also called "Thenn Kasi" and "Vaan Kasi" because it is situated on a hill. 
+                        The temple is small but very peaceful. From the top, you can get a beautiful panoramic view of Madurai city, fields, and hills. 
+                        Special abhishekams are performed during Pradosham and Maha Shivaratri. 
+                        Since Jain beds and the Shiva temple are located together, this place is a perfect blend of history and spirituality.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Festivals & Timings:</h4>
+                        <b>Maha Shivaratri:</b> February - March. All-night pooja and bhajans. <br>
+                        <b>Pradosham:</b> Twice every month. Evening 4:30 PM - 6:00 PM. Vilva pooja is very famous. <br>
+                        <b>Karthigai Deepam:</b> November - December. Grand lighting of lamp on the hilltop. <br>
+                        <b>Tai Amavasai:</b> January - February. Rituals for ancestors. <br>
+                        <b>Best Time to Visit:</b> Early morning or evening. The sunset view from the temple is amazing
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Sri Kasi Viswanathar Temple, Samanar Malai Hill Top, Keelakuyilkudi, Madurai, Tamil Nadu 625018 <br>
+                        <b>Timings:</b> 6:00 AM - 12:00 PM, 4:00 PM - 7:00 PM <br>
+                        <b>How to Reach:</b> 12 KM from Madurai. Take Route 19 bus to Keelakuyilkudi. Then climb approx 200 steps to reach the temple <br>
+                        <b>Note:</b> No vehicle access to the top. Only walking
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== CHURCHES SECTION ========== -->
+        <h2 class="section-title">⛪ Famous Churches in Madurai</h2> <br><br><br>
+
+        <!-- ST MARYS CATHEDRAL -->
+        <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider10">
+                    <img src="https://www.tripsavvy.com/thmb/0FlC5Xw-dkN3QrCuGzPIoXoi0-Y=/3696x2448/filters:no_upscale():max_bytes(150000):strip_icc()/_DSC1218_Fotor_Snapseed-56a3c41d5f9b58b7d0d3a0ea.jpg" class="active" alt="St Marys Cathedral Madurai">
+                    <img src="https://media1.thrillophilia.com/filestore/4k10ue3wvy0bt8jcdzn83sz1vwgf_1549102912_St-Marys-Cathedral-in-Madurai-India.jpg" class="active" alt="St Marys Cathedral Madurai">
+                    <img src="https://www.sterlingholidays.com/content/dam/sterlingholidays/activities/madurai/bannerimage/madurai-st-cathedral-church-activity.jpg" class="active" alt="St Marys Cathedral Madurai">
+                </div>
+                <div class="temple-content">
+                    <h3>10. St. Mary's Cathedral - East Gate</h3>
+                    <p>
+                        One of the oldest and most famous Catholic churches in Madurai. Established in 1841 by Jesuit missionaries. 
+                        Located near East Gate, close to Meenakshi Temple. The architecture is beautiful with tall spires and stained glass windows. 
+                        It is the main cathedral of the Madurai Roman Catholic Archdiocese. Peaceful atmosphere and daily masses are held here. 
+                        Christmas and Easter celebrations are grand.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Festivals & Timings:</h4>
+                        <b>Christmas:</b> December 25. Midnight mass and grand decoration. <br>
+                        <b>Easter:</b> March - April. Special services for 1 week. <br>
+                        <b>Feast of St. Mary:</b> September 8. <br>
+                        <b>Mass Timings:</b> Weekdays 6:00 AM, 7:00 AM. Sunday 6:00 AM, 7:30 AM, 5:30 PM
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> St. Mary's Cathedral, East Gate, Madurai, Tamil Nadu 625001 <br>
+                        <b>Timings:</b> 5:30 AM - 8:00 PM <br>
+                        <b>Landmark:</b> 1 KM from Meenakshi Temple, Near East Gate
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 11. LOURDES CHURCH -->
+        <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider11">
+                    <img src="https://catholiconline.in/wp-content/uploads/2012/06/StLourdesShrine-KPudur-Madurai-02.jpg" alt="Lourdes Church KK Nagar">
+                    <img src="https://catholiconline.in/wp-content/uploads/2012/06/StLourdesShrine-KPudur-Madurai-03.jpg" class="active" alt="Lourdes Church KK Nagar">
+                    <img src="https://catholiconline.in/wp-content/uploads/2012/06/StLourdesShrine-KPudur-Madurai-01.jpg" class="active" alt="Lourdes Church KK Nagar">
+                </div>
+                <div class="temple-content">
+                    <h3>11. Our Lady of Lourdes Church - K.K. Nagar</h3>
+                    <p>Known as "Madurai Lourdes". Famous for healing prayers and Thursday novenas. Has a large grotto of Mother Mary. Very peaceful.</p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Festivals & Timings:</h4>
+                        <b>Thursday Novena:</b> Every Thursday. Special healing prayers. <br>
+                        <b>Feast of Our Lady of Lourdes:</b> February 11.
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Our Lady of Lourdes Church, K.K. Nagar, Madurai, Tamil Nadu 625020 <br>
+                        <b>Timings:</b> 5:30 AM - 8:00 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- ========== MOSQUES SECTION ========== -->
+        <h2 class="section-title">🕌 Famous Mosques in Madurai</h2> <br><br><br>
+
+        <!-- 12. KAZIMAR BIG MOSQUE -->
+        <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider12">
+                    <img src="https://www.sterlingholidays.com/content/dam/sterlingholidays/activities/madurai/bannerimage/madurai-kazimar-big-mosque-activity.jpg" class="active" alt="Kazimar Big Mosque Madurai">
+                    <img src="https://maduraitourism.co.in/images/tourist-places/kazimar-big-mosque-madurai/kazimar-big-mosque-madurai-tourism-opening-time-closing.jpg" class="active" alt="Kazimar Big Mosque Madurai">
+                    <img src="https://tripxl.com/blog/wp-content/uploads/2024/11/Kazimar-Big-Mosque-Area.jpg" class="active" alt="Kazimar Big Mosque Madurai">
+                </div>
+                <div class="temple-content">
+                    <h3>12. Kazimar Big Mosque - Kazimar Street</h3>
+                    <p>
+                        One of the oldest and most famous mosques in South India. Built in 13th century by Hazrat Kazi Syed Tajuddin. 
+                        Located in the heart of Madurai city near West Gate. Beautiful architecture with large prayer hall. 
+                        Friday prayers have huge gatherings. Very peaceful and historic place.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Events & Timings:</h4>
+                        <b>Ramzan:</b> April - May. Special prayers and community feast. <br>
+                        <b>Bakrid:</b> June - July. <br>
+                        <b>Milad-un-Nabi:</b> September - October. <br>
+                        <b>Prayer Timings:</b> 5 times daily. Jummah: Friday 12:30 PM
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Kazimar Big Mosque, Kazimar Street, Madurai, Tamil Nadu 625001 <br>
+                        <b>Timings:</b> 4:00 AM - 9:00 PM <br>
+                        <b>Landmark:</b> Near West Gate, 1.5 KM from Meenakshi Temple
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 13. GORIPALAYAM MOSQUE -->
+        <div>
+            <div class="temple-card">
+                <div class="image-slider1" id="templeSlider13">
+                    <img src="https://i0.wp.com/www.tusktravel.com/blog/wp-content/uploads/2020/03/Goripalayam-Dargah.jpg?w=1280&ssl=1" class="active" alt="Goripalayam Mosque Madurai">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/07/13/06/f3/dargah.jpg?w=900&h=600&s=1" class="active" alt="Goripalayam Mosque Madurai">
+                    <img src="https://dynamic-media-cdn.tripadvisor.com/media/photo-o/16/8b/7b/75/tomba-dei-sultani.jpg?w=900&h=500&s=1" class="active" alt="Goripalayam Mosque Madurai">
+                </div>
+                <div class="temple-content">
+                    <h3>13. Goripalayam Dargah & Mosque</h3>
+                    <p>
+                        Famous Dargah and Mosque complex located near Goripalayam Bus Stand. 
+                        Tomb of Hazrat Meer Ahmad Ibrahim and Meer Amir Ali. 
+                        People of all religions visit here for blessings. Known for "Santhana Koodu" festival. 
+                        Very crowded during Thursdays.
+                    </p>
+                    <div class="festival-box">
+                        <h4>🎉 Major Events & Timings:</h4>
+                        <b>Santhana Koodu Festival:</b> February. 10-day grand Urs. <br>
+                        <b>Thursday Night:</b> Special prayers and offerings. <br>
+                        <b>Ramzan & Bakrid:</b> Grand celebrations. <br>
+                        <b>Prayer Timings:</b> 5 times daily
+                    </div>
+                    <div class="address">
+                        <b>Address:</b> Goripalayam Dargah, Goripalayam, Madurai, Tamil Nadu 625002 <br>
+                        <b>Timings:</b> Open 24 hours for Dargah. Mosque: 4:00 AM - 10:00 PM
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer>
+            <p>© 2026 Madurai Sacred Places Guide</p>
+        </footer>
+
+
+        <a href="MaduraiTourist.html" class="back-btn">← Back to Home</a>
+    </div>
+
+    <footer>
+        <p>Explore Madurai Temples © 2026 | Plan your visit during festivals for the best experience</p>
+    </footer>
+
+    <script src="script1.js"></script>
+
+</body>
+</html>
